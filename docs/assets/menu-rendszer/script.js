@@ -1,6 +1,6 @@
 //Egységes menü rendszer kialakítása:
 const nav = document.querySelector('.navbar') //osztály alapján kiválasztja a menüt
-fetch('https://raw.githubusercontent.com/docziadrian/fas_oldal/main/docs/assets/menu-rendszer/navbar.html') //Egy template -re hivatkozik, amiben a menü van
+fetch('./navbar.html') //Egy template -re hivatkozik, amiben a menü van
 .then(res=>res.text()) //=> function
 .then(data=>{
     nav.innerHTML=data
